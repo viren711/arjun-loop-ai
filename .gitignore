@@ -5,6 +5,16 @@ __pycache__/
 
 # C extensions
 *.so
+*.pt
+
+
+throat-detection\Throat-Cancer-1\train\images\*.jpg
+throat-detection\Throat-Cancer-1\train\labels\*.txt
+throat-detection\Throat-Cancer-1\test\images\*.jpg
+throat-detection\Throat-Cancer-1\test\labels\*.txt
+throat-detection\Throat-Cancer-1\valid\images\*.jpg
+throat-detection\Throat-Cancer-1\valid\labels\*.txt
+
 
 # Distribution / packaging
 .Python

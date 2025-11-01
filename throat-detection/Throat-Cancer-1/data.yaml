@@ -1,0 +1,15 @@
+names:
+- Cancer
+- No Cancer
+- Non Pharyngitis
+- pharyngitis
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: throat-cancer-l6af2
+  url: https://universe.roboflow.com/imtiaz-dnbf3/throat-cancer-l6af2/dataset/1
+  version: 1
+  workspace: imtiaz-dnbf3
+test: ../test/images
+train: Throat-Cancer-1/train/images
+val: Throat-Cancer-1/valid/images
