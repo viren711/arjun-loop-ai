@@ -8,12 +8,12 @@ __pycache__/
 *.pt
 
 
-throat-detection\Throat-Cancer-1\train\images\*.jpg
-throat-detection\Throat-Cancer-1\train\labels\*.txt
-throat-detection\Throat-Cancer-1\test\images\*.jpg
-throat-detection\Throat-Cancer-1\test\labels\*.txt
-throat-detection\Throat-Cancer-1\valid\images\*.jpg
-throat-detection\Throat-Cancer-1\valid\labels\*.txt
+throat-detection\throat-cancer_data\train\images\*.jpg
+throat-detection\throat-cancer_data\train\labels\*.txt
+throat-detection\throat-cancer_data\test\images\*.jpg
+throat-detection\throat-cancer_data\test\labels\*.txt
+throat-detection\throat-cancer_data\valid\images\*.jpg
+throat-detection\throat-cancer_data\valid\labels\*.txt
 
 
 # Distribution / packaging
