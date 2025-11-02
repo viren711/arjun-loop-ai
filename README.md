@@ -11,7 +11,12 @@ This project provides an interface for diagnosis interaction between patients an
 - Support for patients to upload medical images or X-rays for analysis.
 - Record aggregation and natural language summaries to transform scattered medical records, test results, and advice into clear, connected, and readily accessible information.
 
-https://docs.google.com/document/d/17HRf4uWWw-AdZ7tx0KoW7iWwoMORq2JtsCrld5Z50Fs/edit?usp=sharing
+## Documentation, Presentation, and Demo
+
+- [Project Demo](https://drive.google.com/drive/folders/1CakqPv7cl8xOErp2dOA4wmXBsC_gV6Xd)
+- [Project Presentation](https://drive.google.com/file/d/1iqHzcnoB-TKL35KIFvqmkFZUPd2KQBg_/view?usp=drive_link)  
+- [Project Documentation](https://github.com/viren711/arjun-loop-ai)
+
 
 ## Folder Structure
 
@@ -60,11 +65,3 @@ https://docs.google.com/document/d/17HRf4uWWw-AdZ7tx0KoW7iWwoMORq2JtsCrld5Z50Fs/
 2. Prepare your training data and configuration as needed.
 
 3. Run the training scripts or notebooks to train/update models that generate pathological markings and biomarkers.
-
-## Documentation, Presentation, and Demo
-
-- [Project Documentation](https://docs.google.com/document/d/17HRf4uWWw-AdZ7tx0KoW7iWwoMORq2JtsCrld5Z50Fs/edit?usp=sharing)
-- [Project Presentation](#)  <!-- Provide actual link if available -->
-- [Project Demo](#)  <!-- Provide actual link if available -->
-
----
