@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLO Object Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .upload-form {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YOLO Object Detection</h1>
+    <p>Upload an image to detect objects using YOLO model</p>
+    
+    <div class="upload-form">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*">
+            <br>
+            <input type="submit" value="Detect Objects" class="submit-btn">
+        </form>
+    </div>
+</body>
+</html>

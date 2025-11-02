@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .image-box {
+            width: 48%;
+        }
+        img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+        }
+        .detection-results {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .back-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detection Results</h1>
+    
+    <div class="image-container">
+        <div class="image-box">
+            <h3>Original Image</h3>
+            <img src="{{ original_image }}" alt="Original Image">
+        </div>
+        <div class="image-box">
+            <h3>Detected Objects</h3>
+            <img src="{{ result_image }}" alt="Detection Result">
+        </div>
+    </div>
+    
+    <div class="detection-results">
+        <h3>Detected Classes:</h3>
+        {% if detected_classes %}
+            <ul>
+                {% for class in detected_classes %}
+                    <li>{{ class.name }} (Confidence: {{ class.confidence }})</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No objects detected.</p>
+        {% endif %}
+    </div>
+    
+    <a href="/" class="back-btn">Back to Upload</a>
+</body>
+</html>
