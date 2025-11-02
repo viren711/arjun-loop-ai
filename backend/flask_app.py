@@ -1,8 +1,6 @@
 from flask import Flask, request, render_template, jsonify
 from ultralytics import YOLO
 import os
-import cv2
-import numpy as np
 from datetime import datetime
 
 app = Flask(__name__)
@@ -11,12 +9,10 @@ app.config['RESULT_FOLDER'] = 'static/results'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['RESULT_FOLDER'], exist_ok=True)
 
-# Load YOLO model
 def get_yolo_model():
     model = YOLO("yolov8n.pt") 
     return model
 
-# Global variable to store the model
 yolo_model = get_yolo_model()
 
 @app.route('/')
@@ -32,24 +28,19 @@ def predict():
     if file.filename == '':
         return jsonify({'error': 'No image selected'}), 400
     
-    # Save the uploaded image
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"{timestamp}_{file.filename}"
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     file.save(filepath)
     
-    # Process the image with YOLO
     results = process_image(filepath)
     
-    # Save the result image
     result_filename = f"{timestamp}_result_{file.filename}"
     result_path = os.path.join(app.config['RESULT_FOLDER'], result_filename)
     
-    # Get the first result (assuming a single image was processed)
     result = results[0]
     result.save(result_path)
     
-    # Get detected classes
     detected_classes = []
     for box in result.boxes:
         class_id = int(box.cls[0].item())
@@ -66,7 +57,6 @@ def predict():
                           detected_classes=detected_classes)
 
 def process_image(image_path):
-    # Run YOLOv8 inference on the image
     results = yolo_model(image_path)
     return results
 
