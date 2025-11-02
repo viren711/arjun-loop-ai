@@ -13,7 +13,7 @@ This project provides an interface for diagnosis interaction between patients an
 
 ## Documentation, Presentation, and Demo
 
-- [Project Demo](https://drive.google.com/drive/folders/1CakqPv7cl8xOErp2dOA4wmXBsC_gV6Xd)
+- [Project Demo](https://drive.google.com/file/d/1BYM7zqoAzROvN9gjPsJOKo6Da9P8izmF/view?usp=drive_link)
 - [Project Presentation](https://drive.google.com/file/d/1iqHzcnoB-TKL35KIFvqmkFZUPd2KQBg_/view?usp=drive_link)  
 - [Project Documentation](https://github.com/viren711/arjun-loop-ai)
 
