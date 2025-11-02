@@ -65,3 +65,6 @@ This project provides an interface for diagnosis interaction between patients an
 2. Prepare your training data and configuration as needed.
 
 3. Run the training scripts or notebooks to train/update models that generate pathological markings and biomarkers.
+
+
+- [Demo](https://youtu.be/cUi6M1QfLK0)
